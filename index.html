@@ -682,6 +682,7 @@ svg.map{border-radius:20px;box-shadow:none;background:var(--water)}
 .gcard .dots{display:flex;gap:5px}.gcard .dots i{width:12px;height:12px;border-radius:50%}
 .gcard h1{margin:0;font-family:var(--display);font-weight:700;text-transform:none;color:var(--ink);font-size:2.2rem;letter-spacing:-.03em;line-height:1}
 .gcard p{margin:0;color:var(--soft)}
+.gcard p:empty{display:none}
 .gcard label{display:flex;flex-direction:column;gap:6px;font-size:.85rem;font-weight:600;color:var(--soft)}
 .gcard input{font:inherit;font-size:1rem;color:var(--ink);background:var(--card);border:0;box-shadow:inset 0 0 0 1px var(--line);border-radius:14px;padding:12px 14px}
 .gcard input:focus{outline:none;box-shadow:inset 0 0 0 2px var(--ink)}
@@ -696,7 +697,7 @@ body.app-on{padding-block:18px calc(96px + env(safe-area-inset-bottom,0px))}
   <form class="gcard" id="gform">
     <span class="dots"><i style="background:var(--coral)"></i><i style="background:var(--sun)"></i><i style="background:var(--berry)"></i><i style="background:var(--teal)"></i><i style="background:var(--peri)"></i></span>
     <h1>Mi mente</h1>
-    <p id="gsub">Entra con el mismo correo y contraseña de Mi dinero.</p>
+    <p id="gsub"></p>
     <label>Correo<input type="email" id="gmail" autocomplete="username" required></label>
     <label>Contraseña<input type="password" id="gpass" autocomplete="current-password" required></label>
     <button class="pillbtn" type="submit" id="gbtn">Entrar</button>
